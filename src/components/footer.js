@@ -4,11 +4,11 @@ export default class Footer extends React.Component{
    render(){
     return(
         <>
-               <div class="ms_footer_wrapper">
-            <div class="ms_footer_logo">
+        <div class="ms_footer_wrapper">
+            {/* <div class="ms_footer_logo">
                 <a href="index.html"><img src="assets/images/open_logo.png" alt=""/></a>
-            </div>
-            <div class="ms_footer_inner">
+            </div> */}
+            {/* <div class="ms_footer_inner">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer_box">
@@ -86,11 +86,11 @@ export default class Footer extends React.Component{
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div class="col-lg-12">
                 <div class="ms_copyright">
                     <div class="footer_border"></div>
-                    <p>Copyright &copy; 2022 <a href="#">The Miraculous Music Template</a>. All Rights Reserved.</p>
+                    <p>Copyright &copy; 2022 <a href="#">Gando-tech</a>. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

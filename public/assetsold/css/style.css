@@ -4586,10 +4586,10 @@ body.loaded.modal-open .ms_player_wrapper {
 		top: 11px;
 	}
 	.ms_top_trend {
-		text-overflow: ellipsis;
+		/* text-overflow: ellipsis; */
 		overflow: hidden;
 		white-space: nowrap;
-		width: 35%;
+		width: 50%;
 	}
 	.album_list_wrapper ul.more_option {
 		right: 105px;

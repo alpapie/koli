@@ -7,62 +7,42 @@ export default class Footer extends React.Component {
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 col-sm-8 col-md-6 col-lg-6 col-xl-4 order-4 order-md-1 order-lg-4 order-xl-1">
+                            <div class="col-12 col-sm-8 col-md-6 col-lg-6 col-xl-6 order-4 order-md-1 order-lg-6 order-xl-1">
                                 <div class="footer__logo">
                                     <img src="img/logo.svg" alt=""/>
                                 </div>
                                 <p class="footer__tagline">Record Label & Internet Radio,<br/> Online music HTML Template.</p>
                                 <div class="footer__links">
-                                    <a href="mailto:support@blast.template"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.29,8.71a1,1,0,0,0,1.42,0l4-4a1,1,0,1,0-1.42-1.42L17,6.59l-1.29-1.3a1,1,0,0,0-1.42,1.42ZM21,8a1,1,0,0,0-1,1v9a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8.41L9.88,14.3a3,3,0,0,0,2.11.87,3.08,3.08,0,0,0,2.16-.9l1.72-1.72a1,1,0,1,0-1.42-1.42L12.7,12.88a1,1,0,0,1-1.4,0L5.41,7H11a1,1,0,0,0,0-2H5A3,3,0,0,0,2,8V18a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V9A1,1,0,0,0,21,8Z" /></svg> support@blast.template</a>
+                                    <a href="mailto:alpapie0908@gmail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.29,8.71a1,1,0,0,0,1.42,0l4-4a1,1,0,1,0-1.42-1.42L17,6.59l-1.29-1.3a1,1,0,0,0-1.42,1.42ZM21,8a1,1,0,0,0-1,1v9a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8.41L9.88,14.3a3,3,0,0,0,2.11.87,3.08,3.08,0,0,0,2.16-.9l1.72-1.72a1,1,0,1,0-1.42-1.42L12.7,12.88a1,1,0,0,1-1.4,0L5.41,7H11a1,1,0,0,0,0-2H5A3,3,0,0,0,2,8V18a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V9A1,1,0,0,0,21,8Z" /></svg> support@blast.template</a>
                                     <a href="tel:82345678900"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.44,13c-.22,0-.45-.07-.67-.12a9.44,9.44,0,0,1-1.31-.39,2,2,0,0,0-2.48,1l-.22.45a12.18,12.18,0,0,1-2.66-2,12.18,12.18,0,0,1-2-2.66L10.52,9a2,2,0,0,0,1-2.48,10.33,10.33,0,0,1-.39-1.31c-.05-.22-.09-.45-.12-.68a3,3,0,0,0-3-2.49h-3a3,3,0,0,0-3,3.41A19,19,0,0,0,18.53,21.91l.38,0a3,3,0,0,0,2-.76,3,3,0,0,0,1-2.25v-3A3,3,0,0,0,19.44,13Zm.5,6a1,1,0,0,1-.34.75,1.05,1.05,0,0,1-.82.25A17,17,0,0,1,4.07,5.22a1.09,1.09,0,0,1,.25-.82,1,1,0,0,1,.75-.34h3a1,1,0,0,1,1,.79q.06.41.15.81a11.12,11.12,0,0,0,.46,1.55l-1.4.65a1,1,0,0,0-.49,1.33,14.49,14.49,0,0,0,7,7,1,1,0,0,0,.76,0,1,1,0,0,0,.57-.52l.62-1.4a13.69,13.69,0,0,0,1.58.46q.4.09.81.15a1,1,0,0,1,.79,1Z" /></svg> 8 234 567-89-00</a>
-                                </div>
-                            </div>
-
-                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 order-1 order-md-2 order-lg-1 order-xl-2 offset-md-2 offset-lg-0">
-                                <h6 class="footer__title">The Blast</h6>
-                                <div class="footer__nav">
-                                    <a href="about.html">About</a>
-                                    <a href="profile.html">My profile</a>
-                                    <a href="pricing.html">Pricing plans</a>
-                                    <a href="contacts.html">Contacts</a>
                                 </div>
                             </div>
 
                             <div class="col-12 col-md-8 col-lg-6 col-xl-4 order-3 order-lg-2 order-md-3 order-xl-3">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h6 class="footer__title">Browse</h6>
+                                        <h6 class="footer__title">Menu</h6>
                                     </div>
 
                                     <div class="col-6">
                                         <div class="footer__nav">
                                             <a href="artists.html">Artists</a>
-                                            <a href="releases.html">Releases</a>
-                                            <a href="events.html">Events</a>
-                                            <a href="podcasts.html">Podcasts</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-6">
-                                        <div class="footer__nav">
-                                            <a href="news.html">News</a>
-                                            <a href="store.html">Store</a>
-                                            <a href="#">Music</a>
-                                            <a href="#">Video</a>
+                                            <a href="releases.html">pay</a>
+                                            <a href="events.html">news</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 order-2 order-lg-3 order-md-4 order-xl-4">
-                                <h6 class="footer__title">Help</h6>
+                            {/* <div class="col-6 col-md-4 col-lg-3 col-xl-2 order-2 order-lg-3 order-md-4 order-xl-4">
+                                <h6 class="footer__title"></h6>
                                 <div class="footer__nav">
-                                    <a href="privacy.html">Account & Billing</a>
+                                    <a href="privacy.html"></a>
                                     <a href="privacy.html">Plans & Pricing</a>
                                     <a href="privacy.html">Supported devices</a>
                                     <a href="privacy.html">Accessibility</a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div class="row">
@@ -77,7 +57,7 @@ export default class Footer extends React.Component {
                                         <a href="#" target="_blank"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9999 0C6.71586 0 0 6.71569 0 14.9997C0 23.2847 6.71586 30 14.9999 30C23.2843 30 30 23.2847 30 14.9997C30 6.71569 23.2843 0 14.9999 0" fill="#1ED760" /><path d="M21.5494 21.3091C21.2839 21.7445 20.717 21.8809 20.2832 21.6156C16.814 19.4952 12.4472 19.0164 7.30464 20.191C6.80908 20.3046 6.31511 19.9941 6.2022 19.4987C6.08859 19.0032 6.39803 18.5092 6.89464 18.3961C12.5224 17.1097 17.3497 17.6633 21.2438 20.0428C21.678 20.308 21.8147 20.8751 21.5494 21.3091" fill="white" /><path d="M23.3571 17.2862C23.023 17.8283 22.3141 17.9984 21.7727 17.6655C17.8025 15.2251 11.7482 14.518 7.05106 15.9438C6.44207 16.1278 5.79867 15.7845 5.6136 15.1764C5.43013 14.5674 5.77361 13.9252 6.38173 13.74C11.7475 12.1117 18.4181 12.9003 22.9781 15.7027C23.5196 16.0361 23.69 16.7453 23.3571 17.2862" fill="white" /><path d="M23.5131 13.0974C18.7508 10.2692 10.8956 10.0092 6.34947 11.389C5.61927 11.6105 4.84726 11.1984 4.62621 10.4684C4.40498 9.73787 4.81656 8.96639 5.54711 8.74445C10.7659 7.16039 19.4411 7.4663 24.9235 10.7207C25.5803 11.1106 25.7956 11.9586 25.4064 12.6142C25.0169 13.2708 24.1681 13.4873 23.5131 13.0974" fill="white" /></svg></a>
                                         <a href="#" target="_blank"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15Z" fill="#FF0000" /><path d="M22.6656 11.2958C22.4816 10.5889 21.9395 10.0322 21.251 9.84333C20.0034 9.5 15 9.5 15 9.5C15 9.5 9.99664 9.5 8.74891 9.84333C8.06045 10.0322 7.51827 10.5889 7.33427 11.2958C7 12.5769 7 15.25 7 15.25C7 15.25 7 17.923 7.33427 19.2042C7.51827 19.9111 8.06045 20.4678 8.74891 20.6568C9.99664 21 15 21 15 21C15 21 20.0034 21 21.251 20.6568C21.9395 20.4678 22.4816 19.9111 22.6656 19.2042C23 17.923 23 15.25 23 15.25C23 15.25 23 12.5769 22.6656 11.2958" fill="white" /><path d="M13.5 18V13L17.5 15.5001L13.5 18Z" fill="#FF0000" /></svg></a>
                                     </div>
-                                    <small class="footer__copyright">© Blast, 2017—2021. Created by <a href="https://themeforest.net/user/dmitryvolkov/portfolio" target="_blank">Dmitry Volkov</a>.</small>
+                                    <small class="footer__copyright">© Koli, 2023. Created by <a href="https://gando-tech.vercel.app/" target="_blank">alpapie</a>.</small>
                                 </div>
                             </div>
                         </div>

@@ -1,12 +1,12 @@
-import Index from './components';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import Index from './components';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-   <>
-   <Index/>
-   </>
-  );
-}
+// function App() {
+//   return (
+//    <>
+//    <Index/>
+//    </>
+//   );
+// }
 
-export default App;
+// export default App;

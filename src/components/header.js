@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 
-export default function Header() {
+export default function Header({setsidebarmobile,sidebarmobile}) {
+
 	return (
 		<>
 			<header class="header">
 				<div class="header__content">
 					<div class="header__logo">
-						<a href="index.html">
-							<img src="img/logo.svg" alt="" />
+						<a href="/">
+							<img src="assets/img/logo.svg" alt="" />
 						</a>
 					</div>
 
@@ -35,7 +36,7 @@ export default function Header() {
 						</div>
 					</div>
 
-					<button class="header__btn" type="button">
+					<button class={!sidebarmobile?"header__btn":"header__btn header__btn--active"} onClick={()=>{setsidebarmobile(!sidebarmobile)}} type="button">
 						<span></span>
 						<span></span>
 						<span></span>

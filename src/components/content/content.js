@@ -3,7 +3,7 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import KoliList from "./list-koli";
 
-export default function Content({getkoli}) {
+export default function Content({getkoli,search}) {
     let [kolidji, setkolidji] = useState([])
     let [allkoli, setallkoli] = useState(false)
    
@@ -12,9 +12,7 @@ export default function Content({getkoli}) {
     }
     let getdata=async ()=>{
         await axios.get(`${process.env.REACT_APP_BASE_URL}/koli`).then(async (res)=>{
-            console.log(res.data)
             setkolidji(res.data)
-            console.log(res)
            }).catch((error)=>{
             console.log(error)
            })
@@ -24,7 +22,7 @@ export default function Content({getkoli}) {
     },[])
     return (
         <>
-            {allkoli ? <KoliList getkoli={getkoli} /> : <main class="main">
+            {allkoli ? <KoliList getkoli={getkoli} search={search}/> : <main class="main">
                 <div class="container-fluid">
                     <section class="row" >
                         <div class="col-12" >

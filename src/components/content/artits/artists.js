@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState ,useEffect} from "react";
 import Artist from './artist'
 
-export default function Artists({getkoli}) {
+export default function Artists({getkoli,search}) {
 	let [isartist,setisartist]=useState(false)
 	let [artist,setartist]=useState("")
 	let [artists, setartists] = useState(
@@ -28,7 +28,7 @@ export default function Artists({getkoli}) {
     },[])
 	return (
 		<>
-			{isartist?<Artist getkoli={getkoli} artist={artist}/> :
+			{isartist?<Artist getkoli={getkoli} artist={artist} search={search}/> :
 				<main class="main">
 				<div class="container-fluid">
 					{/* <!-- artists --> */}

@@ -1,11 +1,13 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Artist({ artist,getkoli}) {
+export default function Artist({ artist,getkoli,search}) {
     let [kolis, setkolis] = React.useState(
         []
     )
+    let [item,setitem]=useState()
+
     async function getkolisartist (artist){
         let  data = new FormData()
         data.append('artist',artist)
@@ -18,6 +20,7 @@ export default function Artist({ artist,getkoli}) {
         })
        
    } 
+
    useEffect(()=>{
         getkolisartist(artist)
     },[])
@@ -50,8 +53,11 @@ export default function Artist({ artist,getkoli}) {
                         <div class="col-12">
                             <div class="main__filter">
                                 <form action="#" class="main__filter-search">
-                                    <input type="text" placeholder="Search..." />
-                                    <button type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" /></svg></button>
+                                    <input type="text" name="item" onChange={(e)=>{
+                                        setitem(e.target.value)
+                                        search(e.target.value,setkolis)
+                                    }} placeholder="Search..." />
+                                    <button onChange={search.bind(this,item,setkolis)} type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z" /></svg></button>
                                 </form>
                                 {/* <div class="slider-radio">
                                     <input type="radio" name="grade" id="featured" checked="checked" /><label for="featured">Sénégal</label>

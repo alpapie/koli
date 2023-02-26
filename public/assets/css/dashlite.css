@@ -2046,10 +2046,10 @@ progress {
     transition: none;
   }
 }
-.form-control[type=file], .dual-listbox [type=file].dual-listbox__search, div.dataTables_wrapper div.dataTables_filter input[type=file] {
+.form-controlm, .dual-listbox m.dual-listbox__search, div.dataTables_wrapper div.dataTables_filter {
   overflow: hidden;
 }
-.form-control[type=file]:not(:disabled):not([readonly]), .dual-listbox [type=file].dual-listbox__search:not(:disabled):not([readonly]), div.dataTables_wrapper div.dataTables_filter input[type=file]:not(:disabled):not([readonly]) {
+.form-controlm:not(:disabled):not([readonly]), .dual-listbox m.dual-listbox__search:not(:disabled):not([readonly]), div.dataTables_wrapper div.dataTables_filter:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
 .form-control:focus, .dual-listbox .dual-listbox__search:focus, div.dataTables_wrapper div.dataTables_filter input:focus {

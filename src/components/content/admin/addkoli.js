@@ -2,12 +2,14 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
-export default function Ajout({ showthisform ,setshowform ,setalert, getkolipage }) {
+export default function Ajout({ showthisform ,setalert, getkolipage }) {
     let [errorfile,seterrorfile]=useState(null)
     let [errorfileaudio,seterrorfileaudio]=useState(null)
 
     let [filename,setfilename]=useState(null)
     let [filenameaudio,setfilenameaudio]=useState(null)
+    
+    let [senddata,setsenddata]=useState(false)
 
     let checkextentionimage=(file)=>{
         let extlist =["png","jpeg","jpg"]
@@ -27,9 +29,10 @@ export default function Ajout({ showthisform ,setshowform ,setalert, getkolipage
         return null
     }
     
-    const { register, reset, watch, handleSubmit, formState: { errors } } = useForm();
+    const { register, reset, watch, handleSubmit, formState: { errors },getValues } = useForm();
 
     let submit= async (data)=>{
+        setsenddata(true)
         if(checkextentionimage(data.image[0])){
             return seterrorfile(checkextentionimage(data.image[0]))
         }
@@ -45,6 +48,10 @@ export default function Ajout({ showthisform ,setshowform ,setalert, getkolipage
         datas.append('titre',data.titre)
         
         datas.append('koli_secret_key',"sanba_gueladiegui")
+
+        let koliname=(e)=>{
+            console.log(e.target.value)
+        }
 
         await axios.post(`${process.env.REACT_APP_BASE_URL}/koli`,datas)
         .then( async (res)=>{
@@ -63,6 +70,10 @@ export default function Ajout({ showthisform ,setshowform ,setalert, getkolipage
             // seterror("erreur lors de la connection")
             console.log(error)
         })
+        setsenddata(false)
+    }
+    let koliname=(e)=>{
+        console.log(e)
     }
     return (
         <div class="modal fade show" style={{ display: "block" }} id="modalForm">
@@ -105,10 +116,11 @@ export default function Ajout({ showthisform ,setshowform ,setalert, getkolipage
                                     <div class="form-group">
                                         <label class="form-label" for="default-06">Image</label>
                                         {errorfile ?<p className="text-danger"> {errorfile}</p>:null} 
+                                        {errors.image && <p className="text-danger">{errors.image.message}</p>}
                                         <div class="form-control-wrap">
                                             <div class="form-file">
-                                                <input type="file" class="form-file-input" id="customFile"  {...register("image",{"required":"Choisissez une image"})} />
-                                                <label class="form-file-label" for="customFile">{filename}</label>
+                                                <input type="file" class="form-control" id="customFile"  {...register("image",{required:"Choisissez une image"})} />
+                                                <label  for="customFile">{filename}</label>
                                             </div>
                                         </div>
                                     </div>
@@ -120,10 +132,11 @@ export default function Ajout({ showthisform ,setshowform ,setalert, getkolipage
                                     <div class="form-group">
                                         <label class="form-label" for="default-06">koli</label>
                                          {errorfileaudio ?<p className="text-danger"> { errorfileaudio }</p>:null} 
-                                        <div class="form-control-wrap">
-                                            <div class="form-file">
-                                                <input type="file" class="form-file-input" id="customFile" {...register("koli",{"required":"Choisissez un koli"})} />
-                                                <label class="form-file-label" for="customFile">{filenameaudio}</label>
+                                         {errors.koli && <p className="text-danger">{errors.koli.message}</p>}
+                                        <div class="">
+                                            <div class="">
+                                                <input type="file" class="form-control" id="customFile" onChange={koliname} {...register("koli",{required:"Choisissez un koli"})} />
+                                                <label  for="customFile">{filenameaudio}</label>
                                             </div>
                                         </div>
                                     </div>
@@ -139,7 +152,7 @@ export default function Ajout({ showthisform ,setshowform ,setalert, getkolipage
                                 </div>
                             </div>
                             <div className="text-end">
-                                <button type="submit" className="btn btn-primary">Submit</button>
+                                <button type="submit" disabled={senddata} className="btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>

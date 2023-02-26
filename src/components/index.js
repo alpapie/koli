@@ -16,6 +16,7 @@ import Admin from "./content/admin/admin";
 // import Login from "./admin/login";
 import Isauth from './utils/isauth'
 import Logout from "./content/admin/logout";
+import Page403 from "./403";
 
 function Index() {
 
@@ -101,7 +102,7 @@ function Index() {
                             <Route path="/artists" element={<Artists getkoli={getkoli} setpays={setpays} search={search} />} />
                             <Route path="/pays" element={<Pays pays={pays} getkoli={getkoli} search={search} />} />
                             <Route path="/news" element={<News />} />
-                            <Route path="/admin/*" element={auth ? <Admin setauth={setauth} />: <Page404/>} />
+                            <Route path="/admin/*" element={auth ? <Admin setauth={setauth} />: <Page403/>} />
                             <Route path="/login" element={<Login setauth={setauth} auth={auth}/>} />
                             <Route path="/logout" element={<Logout setauth={setauth} auth={auth}/>} />
                             <Route path="*" element={<Page404 />} />

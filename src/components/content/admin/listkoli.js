@@ -67,7 +67,7 @@ export default function Listkoli({setauth}) {
                                                 <div class="nk-block-head-content">
                                                     <h3 class="nk-block-title page-title">Listes Kolis</h3>
                                                     <div class="nk-block-des text-soft">
-                                                        <p>Total Kolis 2,595.</p>
+                                                        <p>Total Kolis.</p>
                                                     </div>
                                                 </div>
                                                 <div class="nk-block-head-content">
@@ -78,7 +78,7 @@ export default function Listkoli({setauth}) {
                                                                 <li>
                                                                     <div class="form-control-wrap">
                                                                         <div class="form-icon form-icon-right">
-                                                                            <em class="icon ni ni-search"></em>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="m29 27.586l-7.552-7.552a11.018 11.018 0 1 0-1.414 1.414L27.586 29ZM4 13a9 9 0 1 1 9 9a9.01 9.01 0 0 1-9-9Z"></path></svg>
                                                                         </div>
                                                                         <input type="text" class="form-control" id="default-04" placeholder="Search by name" />
                                                                     </div>
@@ -120,7 +120,7 @@ export default function Listkoli({setauth}) {
                                                         <div class="nk-tb-col">
                                                             <a href="html/ecommerce/customer-details.html">
                                                                 <div class="user-card">
-                                                                    <div class="user-avatar bg-primary">
+                                                                    <div class="user-avatar">
                                                                     <img src={process.env.REACT_APP_BASE_URL + koli.artist.image} alt={koli.artist.artist_nom} />                                                                </div>
                                                                     <div class="user-info">
                                                                         <span class="tb-lead">{koli.artist.artist_nom}<span class="dot dot-success d-md-none ms-1"></span></span>

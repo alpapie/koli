@@ -49,10 +49,6 @@ export default function Ajout({ showthisform ,setalert, getkolipage }) {
         
         datas.append('koli_secret_key',"sanba_gueladiegui")
 
-        let koliname=(e)=>{
-            console.log(e.target.value)
-        }
-
         await axios.post(`${process.env.REACT_APP_BASE_URL}/koli`,datas)
         .then( async (res)=>{
             if(res.data.success){

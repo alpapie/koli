@@ -57,7 +57,7 @@ export default function Login({auth,setauth}){
                                 <div class="sign__content">
                                     <form action="#" class="sign__form" onSubmit={handleSubmit(onSubmitdata)} >
                                         <a href="index.html" class="sign__logo">
-                                            <img src="assets/img/logo.svg" alt=""/>
+                                            <img src="assets/img/KOLI.png" alt=""/>
                                         </a>
                                             {<p className="text-danger">{error}</p>}
                                         <div class="sign__group">

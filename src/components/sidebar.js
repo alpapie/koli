@@ -11,7 +11,7 @@ export default function Sidebar({ setpays, sidebarmobile, auth }) {
 		<>
 			<div class={!sidebarmobile?"sidebar":"sidebar sidebar--active"}>
 				<div class="sidebar__logo">
-					<img src="assets/img/logo.svg" alt="" />
+					<img src="assets/img/KOLI.png" alt="" />
 				</div>
 				<ul class="sidebar__nav">
 					<li class="sidebar__nav-item">

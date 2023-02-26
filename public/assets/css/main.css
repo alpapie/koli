@@ -319,7 +319,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 .header__logo img {
-  width: 100px;
+  width: 200px;
   height: auto;
   display: block;
 }
@@ -841,7 +841,7 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 2px solid #e6eaf2;
 }
 .sidebar__logo img {
-  width: 100px;
+  width: 200px;
   height: auto;
   display: block;
 }
@@ -5103,10 +5103,10 @@ body::-webkit-scrollbar-thumb {
   border-top: 2px solid #e6eaf2;
 }
 .footer__logo {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .footer__logo img {
-  width: 100px;
+  width: 220px;
   height: auto;
 }
 .footer__tagline {
@@ -5335,7 +5335,7 @@ body::-webkit-scrollbar-thumb {
   width: auto;
 }
 .sign__logo img {
-  width: 100px;
+  width: 250px;
 }
 .sign__title {
   font-size: 16px;

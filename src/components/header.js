@@ -12,7 +12,7 @@ export default function Header({ setsidebarmobile, sidebarmobile ,auth}) {
 				<div class="header__content">
 					<div class="header__logo">
 						<a href="/">
-							<img src="assets/img/logo.svg" alt="" />
+							<img src="assets/img/KOLI.png" alt="" />
 						</a>
 					</div>
 

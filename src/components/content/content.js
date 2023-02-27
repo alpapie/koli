@@ -5,52 +5,6 @@ import KoliList from "./list-koli";
 
 export default function Content({getkoli,search}) {
     let [kolidji, setkolidji] = useState([
-        [
-            {
-              "id": 16,
-              "titre": "tidiani amadou",
-              "audio": "/uploads/kolis/1677360695704Demba Hamet Guisse Tidiani Amadou.mp3",
-              "pays_id": 16,
-              "artists_id": 16,
-              "created_at": "2023-02-25T21:31:35.000+00:00",
-              "updated_at": "2023-02-25T21:31:35.000+00:00",
-              "artist": {
-                "id": 16,
-                "image": "/uploads/images/1677360695714demba.jpg",
-                "artist_nom": "samba",
-                "created_at": "2023-02-25T21:31:35.000+00:00",
-                "updated_at": "2023-02-25T21:31:35.000+00:00"
-              },
-              "pays": {
-                "id": 16,
-                "pays_name": "Guinee",
-                "created_at": "2023-02-25T21:31:35.000+00:00",
-                "updated_at": "2023-02-25T21:31:35.000+00:00"
-              }
-            },
-            {
-              "id": 13,
-              "titre": "test",
-              "audio": "/uploads/kolis/167736026385901. DEMBA HAMET GUISSÈ (Ibra Almamy wane) partie 2.mp3",
-              "pays_id": 13,
-              "artists_id": 13,
-              "created_at": "2023-02-25T21:24:23.000+00:00",
-              "updated_at": "2023-02-25T21:24:23.000+00:00",
-              "artist": {
-                "id": 13,
-                "image": "/uploads/images/1677360263865elhadji oumar.jpg",
-                "artist_nom": "DEMBA HAMET GUISSÈ",
-                "created_at": "2023-02-25T21:24:23.000+00:00",
-                "updated_at": "2023-02-25T21:24:23.000+00:00"
-              },
-              "pays": {
-                "id": 13,
-                "pays_name": "senegal",
-                "created_at": "2023-02-25T21:24:23.000+00:00",
-                "updated_at": "2023-02-25T21:24:23.000+00:00"
-              }
-            }
-          ]
     ])
     let [allkoli, setallkoli] = useState(false)
    
